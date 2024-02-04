@@ -1,0 +1,51 @@
+.phaohoascreen {
+    overflow: hidden;
+    position: relative;
+}
+
+.day {
+    font-family: 'Time', sans-serif;
+    color: green;
+    display: flex;
+    top:10px;
+    left: 10px;
+    position: absolute;
+}
+
+
+#text-container {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    top: 50px;
+    left: 20px;
+    /* left: 0px; */
+}
+
+#text {
+    font-size: 24px;
+    font-family: 'Great vibes', sans-serif;
+    white-space: pre-line;
+
+    overflow: hidden;
+    animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
+}
+/* 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333;
+    }
+} */

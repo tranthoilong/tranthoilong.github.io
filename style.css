@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Popins:wght@200;400;700&display=swap'); */
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Popins',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+
+}
+
+.animated {}
+
+.show {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+@media (prefers-reduced-motion){
+    .hidden {
+        transition: none;
+    }
+}
+
+.logos {
+    display: flex;
+}
+
+img {
+    height: 10vh;
+    width: 10vh;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 800ms;
+}
+
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
